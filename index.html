@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl" xml:lang="nl">
+<head>
+	<title>Webshop - Index</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="fonts/awesome/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/javascript.js"></script>
+</head>
+<body>
+	<nav>
+		<main class="container">
+			<div class="logo"></div>
+			<ul>
+				<a href="/index.html"><li>Home</li></a>
+				<a href="html/webshop.html"><li>Producten</li></a>
+				<a href="html/contact.html"><li>Contact</li></a>
+				<li><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span id="AmountItems">0</span></li>
+			</ul>
+		</main>
+	</nav>
+	<header class="index">
+		<div class="overlay">
+			<main class="container">
+				<h2>Comme Des Garçons</h2>
+			</main>
+		</div>
+	</header>
+	<section class="main">
+		<main class="container">
+			<div class="box">
+				<h3>text</h3>
+			</div>
+		</main>
+	</section>
+	<section class="sale">
+		<main class="container" id="sale">
+			<script type="text/javascript">
+				var ShopItems = "";
+				for(var i = 0; i < 3; i++) {
+					var ShopItems = ShopItems + "<article><img src='image/items/" + i + ".jpg'><main><p class='artikel'>" + shop[i][0] + "</p></main><main><p class='prijs'>€" + shop[i][1] +"</p></main><main class='bottom index'><a href='/html/webshop.html'><button onclick='AddToCart(" + i + ")'>BUY</button></a></main></article>"; 
+				}
+				document.write(ShopItems);
+			</script>
+			<div style="clear: both;"></div>
+		</main>
+	</section>
+	<footer class="footer">
+		<main class="container">
+			<p>Webshop made with ♥ <span class="after">by DanteSchrauwen</span></p>	
+		</main>
+	</footer>
+</body>
+</html>

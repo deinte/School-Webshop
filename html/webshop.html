@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl" xml:lang="nl">
+<head>
+	<title>Webshop - Webshop</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="../fonts/awesome/css/font-awesome.min.css">
+	<script type="text/javascript" src="../js/javascript.js"></script>
+</head> 
+<body id="body">
+	<nav>
+		<main class="container">
+			<divclass="logo"></div>
+			<ul data-aos="fade-down">
+				<a href="../index.html"><li>Home</li></a>
+				<a href="../html/webshop.html"><li>Producten</li></a>
+				<a href="../html/contact.html"><li>Contact</li></a>
+				<li onclick="OpenCart()"><i id="ShoppingCart" class="fa fa-shopping-cart" aria-hidden="true"></i> <span id="AmountItems">0</span></li>
+			</ul>
+		</main>
+	</nav>
+	<header class="index shop">
+		<div class="overlay">
+			<main class="container">
+				<h2>Webshop</h2>
+			</main>
+		</div>
+	</header>
+	<section id="CartOverlay"></section>
+	<section id="Cart">
+	</section>
+	<section class="main">
+		<main class="container">
+			<span><label><input type="checkbox" id="CheckBoxClient" name="klant"> Ik ben al klant <i>-10%</i></label></span>
+			<span id="ClickHere"></span>
+			<span id="error"></span>
+		</main>
+	</section>
+	<section class="sale">
+		<main class="container" id="sale">
+		<script type="text/javascript">
+			GetItems(15);
+		</script>	
+		<div style="clear: both;"></div>		
+		</main>
+	</section>
+	<footer class="footer">
+		<main class="container">
+			<p>Webshop made with ♥ <span class="after">by DanteSchrauwen</span></p>	
+		</main>
+	</footer>
+</body>
+</html>
